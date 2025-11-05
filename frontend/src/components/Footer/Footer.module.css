@@ -1,0 +1,32 @@
+.footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e8e8e8;
+    padding: 2rem;
+    margin-top: auto;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footerText {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #888888;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1.5rem;
+    }
+
+    .footerText {
+        font-size: 0.8rem;
+    }
+}
