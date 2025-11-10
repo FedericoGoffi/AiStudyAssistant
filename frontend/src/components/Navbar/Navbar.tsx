@@ -9,16 +9,6 @@ function Navbar() {
                 </div>
                 <ul className={styles.navLinks}>
                     <li>
-                        <a href="#inicio" className={styles.link}>
-                            Inicio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#proyectos" className={styles.link}>
-                            Proyectos
-                        </a>
-                    </li>
-                    <li>
                         <a href="#contacto" className={styles.link}>
                             Contacto
                         </a>

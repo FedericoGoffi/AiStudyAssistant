@@ -4,7 +4,7 @@ function Footer() {
     return (
         <footer className={styles.footer}>
             <div className={styles.footerContent}>
-                <p className={styles.footerText}>© 2025 AI Study Assistant - Todos los derechos reservados</p>
+                <p className={styles.footerText}>2025 AI Study Assistant</p>
             </div>
         </footer>
     )
