@@ -1,11 +1,11 @@
 .homeContainer {
     width: 100%;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
-    min-height: calc(100vh - 80px);
     background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+    padding: 2rem 1rem;
 }
 
 .contentWrapper {
