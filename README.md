@@ -8,19 +8,71 @@ Consta de dos partes principales:
 
 ---
 
-## Requisitos previos
-- Python 3.10 o superior  
-- Node.js 18 o superior  
-- pip (administrador de paquetes de Python)  
+## Tecnologías utilizadas
+**Frontend:**
+- React + Vite
+- TypeScript
+- Redux Toolkit
+- Axios
+
+**Backend:**
+- FastAPI
+- Transformers (TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+- Torch
+- Uvicorn
+
+**Infraestructura:**
+- Docker & Docker Compose
+- Nginx
+- Node.js 20
+- Python 3.11
 
 ---
 
-## Instalación
+## Ejecución con Docker
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/tuusuario/asistente-educativo.git
-cd asistente-educativo
+git clone https://github.com/tuusuario/AiStudyAssistant.git
+cd AiStudyAssistant
+```
+
+### 2. Construir y ejecutar los contenedores
+```bash
+docker compose up --build
+```
+
+Esto levantará automáticamente:
+- **ai_backend:** FastAPI con el modelo TinyLlama.
+- **ai_frontend:** Interfaz React.
+
+### 2. Acceder a la aplicación
+Una vez completado el proceso, el proyecto estará disponible en:
+```
+http://localhost:5173
+```
+
+> **Nota:** El primer build puede tardar varios minutos, especialmente durante la instalación de dependencias y el modelo TinyLlama.  
+> Esto es normal y depende del hardware de tu máquina.
+
+### 3. Detener los contenedores
+```bash
+docker compose down
+```
+
+---
+
+## Instalación (modo local)
+
+## Requisitos previos
+- Python 3.10 o superior  
+- Node.js 18 o superior  
+- pip (administrador de paquetes de Python)
+
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/tuusuario/AiStudyAssistant.git
+cd AiStudyAssistant
 ```
 
 ### 2. Configurar el backend
@@ -61,21 +113,5 @@ http://localhost:5173
 
 ---
 
-## Tecnologías utilizadas
-**Frontend:**
-- React
-- Vite
-- Axios
-
-**Backend:**
-- FastAPI
-- Transformers
-- TinyLlama 1.1B Chat
-- Torch
-
----
-
 ## Próximos pasos
-- Incorporar Docker para simplificar la ejecución del entorno.
-- Mejorar el diseño visual del frontend.
 - Implementar soporte para historial de preguntas.
