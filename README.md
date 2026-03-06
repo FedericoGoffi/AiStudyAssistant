@@ -71,7 +71,7 @@ docker compose down
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/tuusuario/AiStudyAssistant.git
+git clone https://github.com/FedericoGoffi/AiStudyAssistant
 cd AiStudyAssistant
 ```
 
